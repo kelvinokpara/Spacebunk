@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Navbar />
-      <div>{children}</div>
+      <div className="min-h-[90vh]">{children}</div>
       <Footer />
     </div>
   );

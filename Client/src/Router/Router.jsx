@@ -6,17 +6,69 @@ import ArtistPage from "../Pages/ArtistPage";
 import NftPage from "../Pages/NftPage";
 import RankingPage from "../Pages/RankingPage";
 import Wallets from "../Pages/Wallets";
+//
+// layout import
+import Layout from "../Layouts/Layout";
 
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/marketplace" element={<MarketplacePage />} />
-      <Route path="/accounts" element={<AccountsPage />} />
-      <Route path="/artists" element={<ArtistPage />} />
-      <Route path="/nft" element={<NftPage />} />
-      <Route path="/ranking" element={<RankingPage />} />
-      <Route path="/wallets" element={<Wallets />} />
+      <Route
+        path="/"
+        element={
+          <Layout>
+            <HomePage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/marketplace"
+        element={
+          <Layout>
+            <MarketplacePage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/accounts"
+        element={
+          <Layout>
+            <AccountsPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/artists"
+        element={
+          <Layout>
+            <ArtistPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/nft"
+        element={
+          <Layout>
+            <NftPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/ranking"
+        element={
+          <Layout>
+            <RankingPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/wallets"
+        element={
+          <Layout>
+            <Wallets />
+          </Layout>
+        }
+      />
     </Routes>
   );
 };

@@ -1,6 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[67px];
+  }
+  h2 {
+    @apply text-[51px];
+  }
+  h3 {
+    @apply text-[38px];
+  }
+  h4 {
+    @apply text-[28px];
+  }
+  h5 {
+    @apply text-[22px];
+  }
+  p {
+    @apply text-[16px];
+  }
+}
+
+/* gradients */
+
+.gradient1 {
+  background: var(
+    --gradient-2,
+    linear-gradient(128deg, #a259ff 49.75%, #377df7 136.56%)
+  );
+}
+.gradient2 {
+  background: var(
+    --gradient-1,
+    linear-gradient(101deg, #a259ff 13.57%, #ff6250 97.65%)
+  );
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -35,12 +73,7 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -57,7 +90,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -67,7 +100,7 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
+  /* button {
     background-color: #f9f9f9;
-  }
+  } */
 }
