@@ -6,6 +6,13 @@ export default {
       colors: {
         accent: "#A259FF",
       },
+      fontFamily: {
+        spacemono: "Space Mono, monospace",
+        worksans: "Work Sans, sans-serif",
+      },
+      fontSize: {
+        fontmd: "22px",
+      },
     },
   },
   plugins: [],

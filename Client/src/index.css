@@ -6,7 +6,7 @@
 
 @layer base {
   h1 {
-    @apply text-[67px];
+    @apply text-[64px];
   }
   h2 {
     @apply text-[51px];
@@ -69,8 +69,6 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 /* button {

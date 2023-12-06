@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="w-full box-border px-10">
       <Navbar />
       <div className="min-h-[90vh]">{children}</div>
       <Footer />
