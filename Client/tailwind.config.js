@@ -12,6 +12,7 @@ export default {
       },
       fontSize: {
         fontmd: "22px",
+        fontmd2: "28px",
       },
     },
   },

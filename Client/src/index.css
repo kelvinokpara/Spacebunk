@@ -6,7 +6,7 @@
 
 @layer base {
   h1 {
-    @apply text-[64px];
+    @apply max-sm:text-[28px] max-md:text-[30px] text-[67px];
   }
   h2 {
     @apply text-[51px];
@@ -21,7 +21,19 @@
     @apply text-[22px];
   }
   p {
-    @apply text-[16px];
+    @apply max-sm:text-sm max-md:text-base text-[22px];
+  }
+}
+
+@layer components {
+  .footer_list {
+    @apply text-base text-neutral-400 font-worksans cursor-pointer hover:text-neutral-500 transition-all duration-300;
+  }
+  .footer_list_head {
+    @apply text-[22px] text-white font-bold capitalize font-spacemono;
+  }
+  .px_res {
+    @apply xl:px-10 max-md:px-0 md:px-5;
   }
 }
 
@@ -38,6 +50,10 @@
     --gradient-1,
     linear-gradient(101deg, #a259ff 13.57%, #ff6250 97.65%)
   );
+}
+
+.grid_res {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 :root {

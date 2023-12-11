@@ -11,14 +11,18 @@ const Navbar = () => {
         className="w-[100px] sm:w-[160px] lg:w-[220px]"
       />
       <ul className="flex justify-center items-center gap-8 max-lg:hidden">
-        <li>Marketplace</li>
-        <li>Rankings</li>
-        <li>Connect a wallet</li>
-        <li>
-          <Button btnFill={"fill"} rounded={"md"}>
-            Sign Up
-          </Button>
+        <li className="cursor-pointer hover:text-accent transition-all duration-300">
+          Marketplace
         </li>
+        <li className="cursor-pointer hover:text-accent transition-all duration-300">
+          Rankings
+        </li>
+        <li className="cursor-pointer hover:text-accent transition-all duration-300">
+          Connect a wallet
+        </li>
+        <Button btnFill={"fill"} rounded={"md"}>
+          Sign Up
+        </Button>
       </ul>
       <CgMenuLeft className="text-white hover:text-accent transition-all duration-300 lg:hidden text-xl" />
     </div>
