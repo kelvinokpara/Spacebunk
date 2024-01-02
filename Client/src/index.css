@@ -9,10 +9,10 @@
     @apply max-sm:text-[28px] max-md:text-[30px] text-[67px];
   }
   h2 {
-    @apply text-[51px];
+    @apply text-[54px];
   }
   h3 {
-    @apply text-[38px];
+    @apply max-sm:text-[20px] max-md:text-[30px] text-[38px];
   }
   h4 {
     @apply text-[28px];
