@@ -1,6 +1,6 @@
 import Button from "../Button";
 
-const SectionHead = ({ head, sub, btn = {}, children }) => {
+const SectionHead = ({ head, sub, btn = {}, noBtn, children }) => {
   return (
     <div className="flex flex-col gap-y-10 px_res">
       <div className="flex justify-between items-center">
@@ -11,7 +11,7 @@ const SectionHead = ({ head, sub, btn = {}, children }) => {
           </p>
         </div>
         <div className="max-sm:hidden flex">
-          {btn ? (
+          {btn && !noBtn ? (
             <Button btnFill={btn.btnFill} rounded={btn.rounded} icon={btn.icon}>
               {btn.children}
             </Button>
@@ -22,9 +22,13 @@ const SectionHead = ({ head, sub, btn = {}, children }) => {
       </div>
       {children}
       <div className="max-sm:flex hidden justify-center items-center">
-        <Button btnFill={btn.btnFill} rounded={btn.rounded} icon={btn.icon}>
-          {btn.children}
-        </Button>
+        {btn && !noBtn ? (
+          <Button btnFill={btn.btnFill} rounded={btn.rounded} icon={btn.icon}>
+            {btn.children}
+          </Button>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

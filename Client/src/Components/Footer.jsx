@@ -1,5 +1,5 @@
 import logo from "../assets/Icons/logo_icons/logo_full_light.png";
-import EmailInput from "./EmailInput";
+import EmailInput from "./Inputs/EmailInput";
 
 const Footer = () => {
   return (

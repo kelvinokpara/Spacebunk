@@ -35,6 +35,9 @@
   .px_res {
     @apply xl:px-10 max-md:px-0 md:px-5;
   }
+  .px_page {
+    @apply px-0 md:px-10 max-lg:px-[20px];
+  }
 }
 
 /* gradients */

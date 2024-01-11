@@ -30,7 +30,15 @@ const Router = () => {
         }
       />
       <Route
-        path="/accounts"
+        path="/accounts/:id"
+        element={
+          <Layout>
+            <AccountsPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/accounts/:id"
         element={
           <Layout>
             <AccountsPage />

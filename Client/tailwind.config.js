@@ -5,6 +5,10 @@ export default {
     extend: {
       colors: {
         accent: "#A259FF",
+        blackhue: "#2B2B2B",
+        textGrey: "#858584",
+        bgGrey2: "#2B2B2B",
+        bgGrey1: "#3B3B3B",
       },
       fontFamily: {
         spacemono: "Space Mono, monospace",
