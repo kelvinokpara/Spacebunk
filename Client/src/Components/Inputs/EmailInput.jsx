@@ -5,7 +5,7 @@ const EmailInput = ({ align, icon }) => {
     <div
       className={`gap-4
           bg-white rounded-2xl flex flex-row items-center justify-center
-          max-sm:flex-col max-sm:bg-transparent max-sm:w-full
+          max-sm:flex-col max-sm:bg-transparent max-sm:w-full w-[330px]
       }`}
     >
       <input

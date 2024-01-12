@@ -3,11 +3,12 @@ import HeroSection from "../Components/Sections/HeroSection";
 import SectionHead from "../Components/Sections/SectionHead";
 import TopCreatorSection from "../Components/Sections/TopCreatorSection";
 import TrendingSection from "../Components/Sections/TrendingSection";
-
+import DiscoverNftSection from "../Components/Sections/DiscoverNftSection";
+import HowItWorksSection from "../Components/Sections/HowItWorksSection";
 // react icons import
 import { PiRocketLaunch } from "react-icons/pi";
 import { IoEyeOutline } from "react-icons/io5";
-import DiscoverNftSection from "../Components/Sections/DiscoverNftSection";
+import WeeklyDigest from "../Components/Sections/WeeklyDigest";
 
 const HomePage = () => {
   return (
@@ -56,6 +57,18 @@ const HomePage = () => {
         }}
       >
         <DiscoverNftSection />
+      </SectionHead>
+      {/*  */}
+      <SectionHead
+        head={"How It Works"}
+        sub={"Find out how to get started"}
+        noBtn={true}
+      >
+        <HowItWorksSection />
+      </SectionHead>
+      {/*  */}
+      <SectionHead noBtn={true}>
+        <WeeklyDigest />
       </SectionHead>
       {/*  */}
     </div>

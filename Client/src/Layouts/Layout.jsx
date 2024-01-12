@@ -8,9 +8,8 @@ const Layout = ({ children }) => {
         <Navbar />
       </div>
       <div className="min-h-[90vh] box-border">{children}</div>
-      <div className="px_page">
-        <Footer />
-      </div>
+
+      <Footer />
     </div>
   );
 };

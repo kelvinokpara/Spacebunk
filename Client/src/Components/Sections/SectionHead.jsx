@@ -2,8 +2,8 @@ import Button from "../Button";
 
 const SectionHead = ({ head, sub, btn = {}, noBtn, children }) => {
   return (
-    <div className="flex flex-col gap-y-10 px_res">
-      <div className="flex justify-between items-center">
+    <div className="flex flex-col items-center gap-y-10 px_res">
+      <div className="flex justify-between items-center w-full">
         <div className="flex flex-col gap-3">
           <h3 className="font-worksans font-semibold ">{head}</h3>
           <p className="font-worksans max-sm:text-sm text-base font-normal">
