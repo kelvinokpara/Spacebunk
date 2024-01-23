@@ -3,7 +3,7 @@ import EmailInput from "./Inputs/EmailInput";
 
 const Footer = () => {
   return (
-    <div className=" bg-bgGrey1 mt-20 lg:px-28">
+    <div className=" bg-bgGrey1 mt-20 lg:px-28 px-5">
       <div className="py-12 flex flex-wrap max-md:flex-col flex-row  max-md:gap-8 gap-20 items-start max-lg:justify-center justify-between px_res">
         <ul className="flex flex-col gap-5 max-w-[350px]">
           <img src={logo} alt="logo" width={200} />

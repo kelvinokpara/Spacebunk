@@ -20,7 +20,7 @@ const HeroSection = () => {
     <div
       id="heroSection"
       // className="flex flex-wrap items-center px-10 py-20 gap-20"
-      className="grid items-center px_res py-20 gap-20 max-sm:gap-8 grid_res max-md:grid-cols-1"
+      className="grid items-center px_res py-20 gap-20 max-sm:gap-8 grid_res max-lg:grid-cols-1"
     >
       <div className="max-w-1/2 flex flex-col gap-7 basis-1/2 max-sm:justify-center">
         <h1 className="text-white font-spacemono font-bold max-sm:text-center">

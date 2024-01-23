@@ -39,7 +39,7 @@ const TrendingSection = () => {
     },
   ];
   return (
-    <div className="flex flex-none gap-8 px_res justify-between items-center overflow-x-auto snap-x snap-mandatory">
+    <div className="flex flex-none gap-8 px_res justify-between items-center overflow-x-auto snap-x snap-mandatory w-full">
       {trendingTabs.map((tab, index) => (
         <TrendingCollections
           img1={tab.img1}
